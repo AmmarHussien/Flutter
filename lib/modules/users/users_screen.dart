@@ -1,56 +1,47 @@
 import 'package:flutter/material.dart';
 
-class UserModel{
-  final int id;
-  final String name;
-  final String phone;
+import '../../models/user/user_model.dart';
 
-  UserModel({
-    required this.id,
-    required this.name,
-    required this.phone,
-  });
-}
+
 class UsersScreen extends StatelessWidget {
-   const UsersScreen({Key? key}) : super(key: key);
-
-  static List<UserModel> users =[
+  const UsersScreen({super.key});
+   static List<UserModel> users =[
     UserModel(
         id: 1,
         name: "Ammar Hussein",
         phone: "01146082989"
     ),
-    UserModel(
+     UserModel(
         id: 2,
         name: "Nanosa",
         phone: "01146082989"
     ),
-    UserModel(
+     UserModel(
         id: 3,
         name: "Messi",
         phone: "01146082989"
     ),
-    UserModel(
+     UserModel(
         id: 4,
         name: "Salah",
         phone: "01146082989"
     ),
-    UserModel(
+     UserModel(
         id: 1,
         name: "Ammar Hussein",
         phone: "01146082989"
     ),
-    UserModel(
+     UserModel(
         id: 2,
         name: "Nanosa",
         phone: "01146082989"
     ),
-    UserModel(
+     UserModel(
         id: 3,
         name: "Messi",
         phone: "01146082989"
     ),
-    UserModel(
+     UserModel(
         id: 4,
         name: "Salah",
         phone: "01146082989"
@@ -61,7 +52,7 @@ class UsersScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title:  const Text(
           'Users',
         ),
       ),

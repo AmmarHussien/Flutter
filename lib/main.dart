@@ -1,9 +1,10 @@
-import 'package:firstproject/users_screen.dart';
+
+
 import 'package:flutter/material.dart';
 
-import 'bmi_result_screen.dart';
-import 'bmi_screen.dart';
-import 'counter_screen.dart';
+import 'modules/bmi/bmi_screen.dart';
+import 'modules/login/login_screen.dart';
+import 'modules/users/users_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget{
     // TODO: implement build
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:BmiScreen()
+      home:LoginScreen()
     );
    // throw UnimplementedError();
   }
